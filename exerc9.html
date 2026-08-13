@@ -1,0 +1,41 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista</title>
+        <script>
+            function soma(num1, num2){
+                return num1 +  num2
+            }
+
+            function subtracao(num1,num2){
+                return num1 - num2 
+            }
+
+            function multiplicacao(num1,num2){
+                return num1 * num2
+            }
+
+            function divisao(num1,num2){
+                return num1/num2
+            }
+
+            var num1 = Number(prompt('Primeiro numero:'))
+            var num2 = Number(prompt('Segundo numero:'))
+            var operacao = Number(prompt('Digite uma operação matematica:'))
+
+            if (operacao == '+'){
+                alert(soma(num1,num2))
+            }else if (operacao == '-'){
+                alert(subtracao(num1,num2))
+            }else if (operacao == '*'){
+                alert(multiplicacao(num1,num2))
+            }else if(operacao == '/'){
+                alert(divisao(num1,num2))
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

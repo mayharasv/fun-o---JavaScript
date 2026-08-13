@@ -1,0 +1,73 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista</title>
+        <script>
+           var caneta = {
+            cor: 'Azul',
+            tamanho: 'medio',
+            marca: 'board master',
+            tinta: 10,
+
+            // função
+            escrever(texto){
+                alert(texto)
+                this.tinta = this.tinta - 1
+            },
+            verTinta(){
+                alert(this.tinta)
+            }
+           }
+            // caneta.verTinta
+            // caneta.escrever('Calopsita')
+            // caneta.escrever('Senai')
+            // caneta.escrever('Um texto legal aqui')
+            // caneta.verTinta
+        //    this - chamando ele 
+        //  delete - deleta o objeto
+        //  .(nome.objeto = quantidade) adiciona o objeto 
+           
+
+
+
+
+        //    caneta.material = 'plastico'
+        //    delete caneta.tinta 
+        //    alert(caneta.material)
+
+
+        var calculadora = {
+
+            somar(n1, n2){
+                alert(n1 + n2)
+            },
+            subtracao(n1, n2){
+                alert(n1 - n2)
+            },
+            multiplicacao(n1, n2){
+               alert(n1 * n2)
+            },
+            dividir(n1, n2){
+                alert(n1 / n2)
+            }
+        }
+
+        calculadora.somar(6, 4)
+        calculadora.multiplicacao(5,5)
+        calculadora.subtracao(2,1)
+        calculadora.dividir(20, 4)
+
+
+
+
+
+
+
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

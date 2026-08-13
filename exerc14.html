@@ -1,0 +1,26 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista</title>
+        <script>
+           function contar_pares(lista){
+            var qnt = 0
+            var i = 0
+            while ( i < lista.length){
+                if (lista[i] % 2 == 0){
+                    qnt = qnt + 1
+                }
+                i = i + 1
+            }
+           }
+           alert('Numeros pares: ' + qnt)
+           var numeros = [2,5,6,3,7,8,3]
+           contar_pares(numeros)
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
