@@ -4,7 +4,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lista</title>
         <script>
-           
+            var precos = [30, 25, 50, 40, 80]
+
+            function calcularTotal() {
+                var total = 0
+            
+                for (var preco of precos) {
+                    total += preco
+                }
+            
+                return total
+            }
+            
+            function calcularDesconto(total) {
+                var desconto = 0
+            
+                if (total < 100) {
+                    desconto = 0
+                }
+                else if (total < 200) {
+                    desconto = total * 0.10
+                }
+                else {
+                    desconto = total * 0.20
+                }
+            
+                return desconto;
+            }
+            
+            var total = calcularTotal()
+            var desconto = calcularDesconto(total)
+            var valorFinal = total - desconto;
+            
+            alert("Valor total da compra: R$ " + total)
+            alert("Valor do desconto: R$ " + desconto)
+            alert("Valor final: R$ " + valorFinal)
             
         </script>
     </head>
